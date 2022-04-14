@@ -33,8 +33,26 @@ section .product-description .card-body {
   padding: 0;
 }
 
-section .product-description .card-body .card-title {
-  word-wrap: break-word;
+section .product-description .card-body .card-company .card-title {
+  font-weight: bold;
+}
+
+section .product-description .card-price .card-price-now {
+  font-size: 2em;
+}
+
+section .product-description .card-price .card-discount {
+  color: orange;
+  font-weight: bold;
+  background-color: moccasin;
+  margin-left: 1.5em;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+section .product-description .card-price .card-price-was {
+  text-decoration: line-through;
+  font-weight: 600;
 }
 
 .attribution {
