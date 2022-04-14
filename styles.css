@@ -17,7 +17,7 @@ header .avatar {
 }
 
 section .card {
-  width: 50%;
+  padding: 7em 5em;
   border: none;
 }
 
@@ -27,6 +27,14 @@ section .card img {
 
 section .card .card-thumbnail {
   border-radius: 8px;
+}
+
+section .product-description .card-body {
+  padding: 0;
+}
+
+section .product-description .card-body .card-title {
+  word-wrap: break-word;
 }
 
 .attribution {
