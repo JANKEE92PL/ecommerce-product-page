@@ -62,8 +62,12 @@ section .product-description .card-add input::-webkit-inner-spin-button {
 }
 
 section .product-description .card-add .input-amount {
-  background-color: gainsboro;
-  border: none;
+  background-color: #E9ECEF;
+  width: 20px;
+}
+
+section .product-description .card-add button {
+  width: 200px;
 }
 
 section .attribution {
