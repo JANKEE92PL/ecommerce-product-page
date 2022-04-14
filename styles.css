@@ -55,12 +55,23 @@ section .product-description .card-price .card-price-was {
   font-weight: 600;
 }
 
-.attribution {
+section .product-description .card-add input::-webkit-outer-spin-button,
+section .product-description .card-add input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section .product-description .card-add .input-amount {
+  background-color: gainsboro;
+  border: none;
+}
+
+section .attribution {
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
+section a {
   color: #3e52a3;
 }
 /*# sourceMappingURL=styles.css.map */
