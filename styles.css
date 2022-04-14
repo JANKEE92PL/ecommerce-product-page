@@ -16,6 +16,19 @@ header .avatar {
      object-fit: cover;
 }
 
+section .card {
+  width: 50%;
+  border: none;
+}
+
+section .card img {
+  border-radius: 8px;
+}
+
+section .card .card-thumbnail {
+  border-radius: 8px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
