@@ -5,8 +5,9 @@ let amount = get("amount");
 let minus = get("minus");
 let plus = get("plus");
 let addBtn = get("addBtn");
-let cart = [];
+let cart = {};
 let item = "";
+let badge = get("badge");
 
 plus.addEventListener("click", (e) => {
   amount.stepUp(1);
@@ -17,12 +18,17 @@ minus.addEventListener("click", (e) => {
 
 addBtn.addEventListener("click", (e) => {
   amountInt = getAmount(amount);
-  addToCart(getItem());
-  console.table(cart);
+  addToCart(getItem(), amountInt);
 });
 
-const addToCart = (item) => {
-  cart.push(item);
+const addToCart = (item, amount) => {
+  if (amount > 0) {
+    cart = { item, amount };
+    badge.innerText = cart.amount;
+  } else {
+    badge.innerText = 0;
+    alert("Please add some amount (use the plus Icon to add some Value)");
+  }
 };
 
 const getItem = () => {
